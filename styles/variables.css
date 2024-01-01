@@ -1,1 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --themes-main-color: #000;
+  --themes-background: #fff;
+  --main-font: "Inter", sans-serif;
+  --accent-font: "Press Start 2P", sans-serif;
+  --font-main-weight: 400;
+  --font-accent-weight: 785;
+}
