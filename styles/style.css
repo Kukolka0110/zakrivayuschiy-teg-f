@@ -99,7 +99,7 @@
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   block-size: 2px;
   inline-size: 88%;
@@ -186,7 +186,7 @@
   font-family: var(--main-font);
   font-size: 18px;
   font-style: normal;
-  font-variation-settings: "wght" var(--font-main-weight) ;
+  font-variation-settings: "wght" var(--font-main-weight);
   line-height: 21px; /* 116.667% */
 }
 
@@ -389,11 +389,11 @@
   line-height: normal;
   transition: 0.5s ease-in-out;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
