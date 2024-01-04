@@ -58,10 +58,11 @@
 }
 
 .header__title {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Press Start 2P", fantasy;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: 400;
-  margin-bottom: 18px;
+  margin-block-end: 20px;
+  line-height: 1;
 }
 
 .header__text {
@@ -278,18 +279,19 @@
   border: none;
   background-color: var(--themes-background, #fff);
   outline: 2px solid transparent;
+  transition: 0.3s ease;
+  padding: 0;
 }
 
 .like-icon {
   position: relative;
-  inset-inline-start: 1px;
 }
 
-.card__icon-button:focus .like-icon {
+.card__icon-button:focus {
   outline: none;
 }
 
-.card__icon-button:focus-visible .like-icon {
+.card__icon-button:focus-visible {
   outline: 2px solid var(--themes-main-color, #000);
 }
 
@@ -414,11 +416,6 @@
   gap: 8px;
 }
 
-.dialog__button {
-  inline-size: 293px;
-  min-block-size: 38px;
-}
-
 .button:focus {
   outline: none;
 }
@@ -458,6 +455,11 @@
   background-color: transparent;
   padding-block-end: 105px;
   padding-inline: 2px;
+}
+
+.button:hover .svg-floppy {
+  fill: var(--themes-background, #fff);
+  z-index: 1;
 }
 
 .svg-floppy {
@@ -529,6 +531,11 @@
   color: var(--themes-main-color, #000);
 }
 
+.dialog__button {
+  width: 293px;
+  height: 38px;
+}
+
 @media (width<=375px) {
   .header {
     gap: 22px;
@@ -584,7 +591,7 @@
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
-  .watermark::before {
+  .watermark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--themes-background, #fff);
   }
