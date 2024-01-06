@@ -12,6 +12,86 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+
+.like-icon:hover .main-body {
+  fill: var(--themes-background, #fff);
+  stroke: var(--themes-background, #fff);
+  transition: 0.3s ease-in-out 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--themes-main-color, #000);
+  stroke: var(--themes-main-color, #000);
+  transition: 0.3s ease-in-out;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.contour {
+  fill: var(--themes-main-color, #000);
+}
+
+.core {
+  fill: var(--themes-background, #fff);
+  transition: 0.3s ease-in-out;
+}
+
+.like-icon:hover .core {
+  fill: var(--themes-main-color, #000);
+  transition: 0.3s ease-in-out 0.03s;
+}
+
+.like-icon:active .core {
+  fill: #ff0000;
+  transition: 0.3s ease-in-out;
+}
+
+.main-body {
+  fill: var(--themes-background, #fff);
+  stroke: var(--themes-background, #fff);
+  transition: 0.3s ease-in-out;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--themes-main-color, #000);
+  stroke: var(--themes-main-color, #000);
+  transition: 0.3s ease-in-out 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: #ff0000;
+  stroke: #ff0000;
+  transition: 0.3s ease-in-out 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: #ff0000;
+}
+
+.like-icon.is-liked .main-body {
+  fill: #ff0000;
+  stroke: #ff0000;
+}
+
+.like-icon.is-liked .contour {
+  fill: #ff0000;
+  stroke: #ff0000;
+  transition: 0.3s ease-in-out 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: 0.3s ease-in 0.1s alternate like-heart;
+  fill: #ff0000;
+  stroke: #ff0000;
+  transform-origin: 50%;
+}
+
+.like-icon.is-liked .sparks {
+  animation: 0.3s ease-in 0.3s alternate like-heart-fill;
+}
 @keyframes arrow-move {
   from {
     transform: translateX(0);
