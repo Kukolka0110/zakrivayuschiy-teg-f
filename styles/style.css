@@ -182,6 +182,8 @@
 .card-container {
   border-block-start: 2px solid var(--themes-main-color);
   border-block-end: 2px solid var(--themes-main-color);
+  display: flex;
+  position: relative;
 }
 
 .card__about-text {
@@ -212,11 +214,6 @@
     -1px -1px var(--themes-background, #fff),
     -1px 1px var(--themes-background, #fff),
     1px -1px var(--themes-background, #fff);
-}
-
-.card-container {
-  display: flex;
-  position: relative;
 }
 
 .card-image {
@@ -382,7 +379,7 @@
   transition: 0.5s ease-in-out;
 }
 
-.save-svg-floppy{
+.save-svg-floppy {
   color: var(--button-color, #fff);
   block-size: 21px;
   inline-size: 21px;
