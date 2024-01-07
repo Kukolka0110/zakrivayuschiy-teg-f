@@ -2,6 +2,7 @@
 :root {
   --themes-main-color: #000;
   --themes-background: #fff;
+  --button-color: #fff;
   --main-font: "Inter", sans-serif;
   --accent-font: "Press Start 2P", fantasy;
   --font-main-weight: 400;
